@@ -12,8 +12,6 @@ using Unity.VisualScripting;
 public class AgentController : Agent
 {
 
-
-
     //Pellet veriables
     [SerializeField] private Transform target;
     public int pelletCount;
@@ -41,17 +39,12 @@ public class AgentController : Agent
     //This represents another class and may be important for the full functionality of the code. This object is used to perform reward and penalty operations in response to specific events.
 
 
-
-
-
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody>();
         envMaterial = env.GetComponent<Renderer>().material;
 
-
     }
-
 
     public override void OnEpisodeBegin()
     {
@@ -59,12 +52,10 @@ public class AgentController : Agent
         // transform.localPosition = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
         transform.localPosition = new Vector3(UnityEngine.Random.Range(-4f, 4f), 0.3f, UnityEngine.Random.Range(-4f, 4f));
 
-
-
         //Pellet
         CreatePellet();
+        
         //target.localPosition = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
-
         //timer to determine if agent is taking too long and needs to be punished
         EpisodeTimerNew();
     }
@@ -136,39 +127,21 @@ public class AgentController : Agent
 
                         }
                         counter++;
-
-
                     }
                     else
                     {
-
-
                         k = spawnedPelletsList.Count;
                     }
-
-
-
                 }
-
-
-
-
             }
-
-
-
             //"spawn" in new location
             newPellet.transform.localPosition = pelletLocation;
             //add to list
             spawnedPelletsList.Add(newPellet);
-
-
-
         }
-
     }
 
-    public List<float> distanceList = new List<float>();
+public List<float> distanceList = new List<float>();
     public List<float> badDistanceList = new List<float>();
 
     public bool CheckOverlap(Vector3 objectWeWantToAvoidOverlapping, Vector3 alreadyExistingObject, float minDistanceWanted)
@@ -216,11 +189,7 @@ public class AgentController : Agent
         rb.MovePosition(transform.position + transform.forward * moveForward * moveSpeed * Time.deltaTime);
         transform.Rotate(0f, moveRotate * moveSpeed, 0f, Space.Self);
 
-
-
-
         /*
-
 
          Vector3 velocity = new Vector3(moveX, 0f, moveZ);
 
