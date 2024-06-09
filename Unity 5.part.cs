@@ -101,10 +101,6 @@ public class AgentController : Agent
                     }
 
                 }
-
-
-
-
             }
 			
 			//"spawn" in location
@@ -114,7 +110,6 @@ public class AgentController : Agent
 			Debug.Log("Spawned");
 			
 }
-
     }
 	
 	public List<float> distanceList = new List<float>();
