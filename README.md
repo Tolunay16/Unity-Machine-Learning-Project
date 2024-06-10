@@ -65,7 +65,17 @@ Part 4
 
 What we need to do in this part is to create pellets randomly on the map and delete them from the map. Additionally, if our reward function collects all the pellets, our environment is set to be green and otherwise red.
 
-![Uploading Ekran Alıntısı.PNG…]()
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/1ecf84ee-1e07-4856-b6c1-3e73e6f755dd)
+
+Then you can start machine learning and stop it when you get these results.
+
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/e7ea61c5-22fc-4bbc-adba-66577adf1f58)
+
+Part 5 
+
+
+
+
 
 
 
