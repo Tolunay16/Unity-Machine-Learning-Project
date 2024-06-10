@@ -2,7 +2,9 @@
 
 The aim of this project is to design a project by integrating machine learning into the unit. I will explain the steps you need to take before starting the project.
 
-1-You should download Unity and install the latest updates. Then start a 3D project ( This project was made with Unity 3.5.0 version.)(NET Framework 4.8 version is available.)
+PART 1 
+
+You should download Unity and install the latest updates. Then start a 3D project ( This project was made with Unity 3.5.0 version.)(NET Framework 4.8 version is available.)
 
 2-Install MLAgents library in your project 
 
@@ -36,6 +38,50 @@ Once you get these results you can stop machine learning
 Then enter the command mlagents -learn --run-id Trial 1 into cmd and start machine learning
 
 Get the results from the results section and add them to the Assest folder.
+
+PART 2
+
+In this part, we first created a rectangle around us. We make this a little bigger and make it square.
+
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/45f6734c-b585-4d19-8ed1-09a3dcb238ef)
+
+After this stage, you can enter the codes given in Part 2 and start machine learning work.
+
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/43a4ab43-ad0f-4367-88df-67aa390edb88)
+
+Part 3
+
+You should open a folder named Prefab. In this way, the changes you make are applied to all other copies.
+
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/87bad0f3-aafb-41d3-9c1c-006b210f0011)
+
+Then let's add a face to our agent for complete visual beauty.
+
+![Ekran Alıntısı](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/cd7cd373-b9f4-4108-b9b9-289ab97aa5f3)
+
+Then we can add our code from Part 3 to our code page and start machine testing. You can stop the test when you get the results you see in the picture.
+
+Part 4
+
+What we need to do in this part is to create pellets randomly on the map and delete them from the map. Additionally, if our reward function collects all the pellets, our environment is set to be green and otherwise red.
+
+![Uploading Ekran Alıntısı.PNG…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
