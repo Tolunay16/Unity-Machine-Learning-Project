@@ -1,9 +1,21 @@
 Integration of Machine Learning with Unity: A Project Framework
+
+
 Abstract
+
+
 This thesis outlines the process of integrating machine learning into Unity to create an interactive 3D project. The document provides a comprehensive guide to setting up the necessary software, libraries, and configurations, and offers a step-by-step methodology for developing the project.
+
+
 Introduction
+
+
 The primary objective of this project is to incorporate machine learning capabilities within Unity. This integration will enhance the interactivity and functionality of 3D environments. This document details the initial setup and subsequent steps required to successfully complete the project.
+
+
 Part 1: Preliminary Setup
+
+
 1. Unity Installation
 Begin by downloading and installing the latest version of Unity. This project has been developed using Unity version 3.5.0 and is compatible with the .NET Framework 4.8.
 2. Installation of ML-Agents
@@ -17,6 +29,7 @@ Refer to the image below for the specific libraries required:
 ![11](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/70d77f6f-f6f0-4977-bb97-862d262eaf56)
 
 Part 2: Project Development
+
 Step 1: Environment Creation
 Create a 3D environment where the agents will operate. This includes:
 ⦁	A platform for the agents to navigate.
@@ -67,6 +80,8 @@ By following these steps, you will have successfully set up the environment and 
 This section details the essential steps for creating the operational environment and commencing the machine learning phase. By adhering to these guidelines, the project will advance towards developing an intelligent agent capable of performing tasks within a defined 3D space.
 
 Part 3: Enhancing the Agent and Initiating Machine Testing
+
+
 Step 1: Creating and Using Prefabs
 
 Create a folder named "Prefab" within your project directory. Prefabs allow you to apply changes universally to all instances of a particular object, ensuring consistency across your project.
@@ -74,13 +89,18 @@ Create a folder named "Prefab" within your project directory. Prefabs allow you 
 ![Ekran Alıntısı PNG31](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/a6d5be5d-504f-4d63-b843-c25c8e101d9f)
 
 Step 2: Adding Visual Enhancements
+
 Enhance the visual appearance of your agent by adding a face. This step is crucial for improving the aesthetic appeal of your agent, making it more engaging and visually pleasing.
 
 ![35](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/f14ae202-f9a3-426f-9429-289938d9a13e)
 
 Step 3: Implementing Part 3 Code
 Integrate the code provided in Part 3 into your project’s script. This code is essential for conducting machine testing and refining the agent’s performance.
+
+
 Step 4: Starting Machine Testing
+
+
 Commence the machine testing phase by running the implemented code. Monitor the results closely and halt the testing process once you achieve the desired outcomes, as illustrated in the image below.
 
 By following these steps, you will enhance the visual aspect of your agent, ensure consistent updates through prefabs, and initiate the machine testing phase effectively. These steps are crucial for the successful completion and refinement of your project, leading to a well-developed and visually appealing intelligent agent.
@@ -94,9 +114,13 @@ In this phase, you will generate pellets randomly across the map. Implement func
 ![gol](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/17c40d39-e485-4ccb-9b3f-c84c50fc78b0)
 
 Step 2: Setting Up the Reward Function
+
+
 Develop a reward function that changes the environment's color based on the agent's performance. If the agent collects all the pellets, the environment should turn green, indicating success. Conversely, if the agent fails to collect all the pellets, the environment should turn red.
 
 Step 3: Initiating Machine Learning
+
+
 Once the dynamic elements and reward function are in place, begin the machine learning process. Monitor the training until you achieve the desired results, as depicted below.
 
 ![66](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/a466fc9e-ab9b-4665-a0f8-c556ffe86bb3)
@@ -104,13 +128,17 @@ Once the dynamic elements and reward function are in place, begin the machine le
 By following these instructions, you will enhance the interactivity of your environment through dynamic pellet generation and a responsive reward function. These improvements are crucial for training a more effective and adaptive agent, contributing to the overall success of your machine learning project within Unity.
 
 Part 5: Error Handling and Machine Learning Finalization
+
+
 Step 1: Implementing Error Detection Functions
+
 In this stage, you will define functions to handle errors that occur when objects overlap or are positioned too closely together. These functions are essential for ensuring the integrity of the environment and avoiding unintended interactions.
 
 ![ppo](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/37263d30-93ec-4699-bc70-42b01f4537a8)
 
 Step 2: Initiating Machine Learning Tests
 With the error detection functions in place, commence the machine learning tests. The goal in this phase is to ensure that the agent can operate within the environment without encountering significant errors due to overlapping or close-proximity objects.
+
 Step 3: Monitoring and Saving Progress
 You do not need to achieve a specific success rate in this part. Once you observe some level of success and the agent demonstrates the ability to function correctly with the implemented error detection, you can terminate the machine learning process. Save the project file to preserve the current state and progress.
 
@@ -119,6 +147,7 @@ By incorporating error detection functions and initiating machine learning tests
 
 
 Part 6: Implementing a Timer and Finalizing the Project
+
 Step 1: Adding a Timer to the Project
 Introduce a timer to your project. The timer will limit the time available for the agent to collect all the pellets. If the agent fails to collect the pellets within the allotted time, the environment will turn red, indicating failure.
 
@@ -126,8 +155,10 @@ Introduce a timer to your project. The timer will limit the time available for t
 
 Step 2: Configuring the Timer
 Once the timer is added, a new tab will appear in Unity’s interface. Configure the timer settings according to the project requirements. The timer will begin when the project starts, providing a set duration for the agent to complete its task.
+
 Step 3: Integrating the Timer with Machine Learning
 Incorporate the timer functionality into the machine learning model. This integration will help the agent learn to perform its task within the given time constraint.
+
 Step 4: Training and Monitoring
 Begin the machine learning process with the new timer feature. Observe the agent's performance under the time constraint. As with previous parts, a specific success rate is not necessary. Once the agent demonstrates a basic level of success in completing the task within the time limit, you can conclude the machine learning phase.
 
@@ -135,7 +166,9 @@ By adding a timer to your project, you introduce a critical time-based challenge
 
 
 Part 7: Introducing a Hunter to the Environment
+
 Step 1: Creating the Hunter
+
 Create a new entity named "Hunter" in your project. The Hunter will be designed to chase the agent, adding an additional layer of challenge. The Hunter should be created and designed using the same methods as those used for the agent.
 
 ![ttr](https://github.com/Tolunay16/Unity-Machine-Learning-Project/assets/134376655/42ed2760-ed7a-48ef-b06e-d1a345ab0f96)
@@ -144,8 +177,10 @@ Create a new entity named "Hunter" in your project. The Hunter will be designed 
 
 Step 2: Implementing Hunter Behavior
 Write the necessary scripts to define the Hunter's behavior. This script will govern how the Hunter tracks and attempts to catch the agent. Ensure that the Hunter's behavior is dynamic and poses a real challenge to the agent.
+
 Step 3: Integrating the Hunter with the Agent
 Modify the agent's script to recognize the presence of the Hunter. The agent should be able to perceive and respond to the Hunter, adjusting its behavior to avoid being caught.
+
 Step 4: Testing the New Dynamics
 Initiate machine learning tests to train the agent in the presence of the Hunter. Monitor the interactions between the agent and the Hunter, ensuring that the agent learns to evade effectively. As with previous steps, achieving a specific success rate is not required. Conclude the training once the agent demonstrates a basic level of success in evading the Hunter.
 
